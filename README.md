@@ -45,8 +45,8 @@ Using this library is relatively easy:
     int result = pty.waitFor();
     
     // free up resources.
-    pty.close();
-
+    //pty.close();
+    pty.destroy();
 The operating systems currently supported by pty4j are: Linux, OSX and
 Windows.  
 
